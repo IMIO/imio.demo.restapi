@@ -43,6 +43,7 @@ setup(
         # -*- Extra requirements: -*-
         "plone.api",
         "imio.restapi",
+        "imio.ws.register",
         "setuptools",
     ],
     extras_require={
