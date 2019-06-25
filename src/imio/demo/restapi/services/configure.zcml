@@ -1,0 +1,20 @@
+<configure
+  xmlns="http://namespaces.zope.org/zope"
+  xmlns:plone="http://namespaces.plone.org/plone"
+  xmlns:zcml="http://namespaces.zope.org/zcml">
+
+  <adapter
+    factory=".schema.RequestSchemaTestAdapter"
+    for="zope.interface.Interface
+         zope.publisher.interfaces.browser.IBrowserRequest"
+    name="test"
+    />
+
+  <adapter
+    factory=".schema.RequestSchemaDocumentAdapter"
+    for="zope.interface.Interface
+         zope.publisher.interfaces.browser.IBrowserRequest"
+    name="Document"
+    />
+
+</configure>

@@ -4,4 +4,9 @@
     xmlns:plone="http://namespaces.plone.org/plone"
     i18n_domain="imio.demo.restapi">
 
+  <include package="imio.ws.register" />
+  <include package="imio.restapi" />
+
+  <include package=".services" />
+
 </configure>
