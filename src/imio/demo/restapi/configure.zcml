@@ -8,5 +8,6 @@
   <include package="imio.restapi" />
 
   <include package=".services" />
+  <include package=".form" />
 
 </configure>
