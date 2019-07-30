@@ -6,49 +6,18 @@
 imio.demo.restapi
 ================
 
-Tell me what your product does
+Installation & Test
+-------------------
 
-Features
---------
+Run demo instances::
 
-- Can be bullet points
+    make iadelib-up
+    make urban-up
+    make middleware-up
 
-
-Examples
---------
-
-This add-on can be seen in action at the following sites:
-- Is there a page on the internet where everybody can see the features?
-
-
-Documentation
--------------
-
-Full documentation for end users can be found in the "docs" folder, and is also available online at http://docs.plone.org/foo/bar
-
-
-Translations
-------------
-
-This product has been translated into
-
-- Klingon (thanks, K'Plai)
-
-
-Installation
-------------
-
-Install imio.demo.restapi by adding it to your buildout::
-
-    [buildout]
-
-    ...
-
-    eggs =
-        imio.demo.restapi
-
-
-and then running ``bin/buildout``
+The fake IA Delib instance will run on: http://localhost:8080
+The fake URBAN instance will run on: http://localhost:8080
+The middleware instance will run on: http://localhost:6543
 
 
 Contribute
@@ -56,7 +25,6 @@ Contribute
 
 - Issue Tracker: https://github.com/collective/imio.demo.restapi/issues
 - Source Code: https://github.com/collective/imio.demo.restapi
-- Documentation: https://docs.plone.org/foo/bar
 
 
 Support
