@@ -46,6 +46,11 @@ services:
       timeout: 10s
       retries: 3
       start_period: 40s
+    environment:
+      MQ_HOST: rabbitmq
+      MQ_PORT: 5672
+      DB_HOST: postgres
+      DB_PORT: 5432
   request_read_handler:
     image: docker-staging.imio.be/webservicejson/mutual:latest
     user: imio
@@ -56,6 +61,11 @@ services:
     command: /start.sh request_read_handler /home/imio/config/development.ini
     depends_on:
       - instance
+    environment:
+      MQ_HOST: rabbitmq
+      MQ_PORT: 5672
+      DB_HOST: postgres
+      DB_PORT: 5432
   request_write_handler:
     image: docker-staging.imio.be/webservicejson/mutual:latest
     user: imio
@@ -66,6 +76,11 @@ services:
     command: /start.sh request_write_handler /home/imio/config/development.ini
     depends_on:
       - instance
+    environment:
+      MQ_HOST: rabbitmq
+      MQ_PORT: 5672
+      DB_HOST: postgres
+      DB_PORT: 5432
   request_error_handler:
     image: docker-staging.imio.be/webservicejson/mutual:latest
     user: imio
@@ -76,3 +91,8 @@ services:
     command: /start.sh request_error_handler /home/imio/config/development.ini
     depends_on:
       - instance
+    environment:
+      MQ_HOST: rabbitmq
+      MQ_PORT: 5672
+      DB_HOST: postgres
+      DB_PORT: 5432
