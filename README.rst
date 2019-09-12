@@ -16,7 +16,7 @@ Run demo instances::
     make middleware-up
 
 The fake IA Delib instance will run on: http://localhost:8080
-The fake URBAN instance will run on: http://localhost:8080
+The fake URBAN instance will run on: http://localhost:8081
 The middleware instance will run on: http://localhost:6543
 
 
